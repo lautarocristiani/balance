@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Balance ⚖️ - Simple Inventory Manager
 
-## Getting Started
+**Balance** is a full-stack CRUD (Create, Read, Update, Delete) web application built with Next.js and Supabase. It allows users to manage a product inventory through a clean, simple, and visual interface that supports both light and dark modes.
 
-First, run the development server:
+![Balance App Screenshot](./docs/capture_balance.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Live Demo 🌐
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can view the deployed project and test it live at the following link:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**[View Live Demo](https-your-vercel-link-here)**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### ## Key Features ✨
 
-To learn more about Next.js, take a look at the following resources:
+* **Product Management (CRUD):**
+    * **Create:** Add new products via a modal-based form.
+    * **Read:** View all products on a responsive grid.
+    * **Update:** Edit the information of an existing product, including its image.
+    * **Delete:** Remove products from the inventory with a confirmation prompt.
+* **Image Uploads:** Integrated with Supabase Storage to host product images.
+* **Light & Dark Mode:** A functional theme switcher with smooth transitions for an enhanced user experience.
+* **Responsive Design:** The interface adapts seamlessly to various screen sizes, from mobile to desktop.
+* **Modern UI:** Built with Tailwind CSS for rapid and customizable styling, complete with subtle animations.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ## Tech Stack 🛠️
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* **Framework:** Next.js (App Router)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **Backend & Database:** Supabase (PostgreSQL & Storage)
+* **UI/UX:**
+    * React Hooks
+    * `next-themes` for theme management.
+    * `lucide-react` for icons.
+* **Deployment:** Vercel
