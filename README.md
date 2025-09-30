@@ -12,7 +12,7 @@ You can view the deployed project and test it live at the following link:
 
 ---
 
-### ## Key Features ✨
+## Key Features ✨
 
 * **Product Management (CRUD):**
     * **Create:** Add new products via a modal-based form.
@@ -26,7 +26,7 @@ You can view the deployed project and test it live at the following link:
 
 ---
 
-### ## Tech Stack 🛠️
+## Tech Stack 🛠️
 
 * **Framework:** Next.js (App Router)
 * **Language:** TypeScript
