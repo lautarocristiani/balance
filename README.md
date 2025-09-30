@@ -6,7 +6,7 @@
 
 ## Live Demo 🌐
 
-You can view the deployed project and test it live at the following link: **[https://balance-pink.vercel.app](https://balance-pink.vercel.app)**
+You can view the deployed project and test it live at the following link: **[https://balance-two-eta.vercel.app](https://balance-two-eta.vercel.app)**
 
 ---
 
