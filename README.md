@@ -2,7 +2,7 @@
 
 **Balance** is a full-stack CRUD (Create, Read, Update, Delete) web application built with Next.js and Supabase. It allows users to manage a product inventory through a clean, simple, and visual interface that supports both light and dark modes.
 
-![Balance App Screenshot](./docs/capture_balance.png)
+![Balance App Screenshot](./docs/capture-balance.png)
 
 ## Live Demo 🌐
 
