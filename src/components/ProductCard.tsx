@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Button } from './ui/Button';
 import { Edit, Trash2 } from 'lucide-react';
 import type { Product } from '@/types';
@@ -13,11 +14,12 @@ interface ProductCardProps {
 export function ProductCard({ product, onDelete, onEdit }: ProductCardProps) {
   return (
     <div className="border border-gray-300 dark:border-white/10 rounded-lg p-4 flex flex-col gap-4 bg-white dark:bg-gray-500/5 hover:border-orange-500 dark:hover:border-orange-500 transition-colors duration-300">
-      <div className="aspect-video rounded-md overflow-hidden">
-        <img 
+      <div className="relative aspect-video rounded-md overflow-hidden">
+        <Image 
           src={product.image_url || `https://placehold.co/600x400/1e293b/f97316?text=Image`} 
           alt={product.name} 
-          className="w-full h-full object-contain"
+          fill
+          className="object-contain"
         />
       </div>
       <div className="flex-grow">

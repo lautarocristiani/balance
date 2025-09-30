@@ -1,13 +1,23 @@
 'use client';
 
 import { useState, useEffect } from "react";
+import Image from 'next/image';
 import { Button } from "./ui/Button";
 import { ImageUp, XCircle } from 'lucide-react';
 import type { Product } from "@/types";
 
+// Tipo específico para los datos del formulario
+interface ProductFormData {
+  name: string;
+  price: number;
+  description: string;
+  imageFile: File | null;
+  wantsToRemoveImage: boolean;
+}
+
 interface ProductFormProps {
   initialData?: Product | null;
-  onSubmit: (data: any) => void;
+  onSubmit: (data: ProductFormData) => void; // Usamos el tipo específico aquí
   isLoading?: boolean;
 }
 
@@ -124,7 +134,7 @@ export function ProductForm({ initialData, onSubmit, isLoading }: ProductFormPro
             </div>
           ) : (
             <div className="relative w-full h-full rounded-md overflow-hidden flex items-center justify-center">
-              <img src={imagePreviewUrl} alt="Image preview" className="object-contain w-full h-full" />
+              <Image src={imagePreviewUrl} alt="Image preview" fill className="object-contain" />
               <button 
                 type="button" 
                 onClick={handleRemoveImage} 

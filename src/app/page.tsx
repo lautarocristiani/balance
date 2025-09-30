@@ -216,7 +216,7 @@ export default function HomePage() {
               {products.length === 0 ? (
                 <div className="text-center py-20 border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-lg">
                    <h2 className="text-2xl font-semibold text-slate-700 dark:text-slate-200">No products found.</h2>
-                   <p className="text-slate-500 dark:text-slate-400 mt-2">Click "Add Product" to get started!</p>
+                   <p className="text-slate-500 dark:text-slate-400 mt-2">Click &quot;Add Product&quot; to get started!</p>
                 </div>
               ) : (
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -247,10 +247,10 @@ export default function HomePage() {
                </Button>
              </div>
              <ProductForm
-                initialData={editingProduct}
-                onSubmit={editingProduct ? handleUpdateProduct : handleAddProduct}
-                isLoading={isSubmitting}
-              />
+               initialData={editingProduct}
+               onSubmit={editingProduct ? handleUpdateProduct : handleAddProduct}
+               isLoading={isSubmitting}
+             />
           </div>
         </div>
       )}
